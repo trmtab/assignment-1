@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+    env_file:
+      - ./.env
+    ports:
+      - "7860:7860"
